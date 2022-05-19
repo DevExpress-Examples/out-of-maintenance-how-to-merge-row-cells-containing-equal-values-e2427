@@ -51,7 +51,7 @@ namespace WindowsApplication53
                 int right = e.Bounds.Right + width * (xr - e.ColumnIndex) - 1;
                 Rectangle rec = new Rectangle(left, e.Bounds.Top , right - left, e.Bounds.Height -1 );
                 
-                e.Graphics.FillRectangle(e.Appearance.GetBackBrush(e.GraphicsCache) , rec );
+                e.Graphics.FillRectangle(e.Appearance.GetBackBrush(e.GraphicsCache), rec );
                 StringFormat sf = new StringFormat();
                 sf.Alignment = StringAlignment.Center;
                 sf.LineAlignment = StringAlignment.Center;
